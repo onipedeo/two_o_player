@@ -33,10 +33,10 @@ class Game
         if answer_check == false
           puts "#{@current_player.name}: Seriously? No!"
           @current_player.decrease_life()
-          puts "#{@player1.name}: #{@player1.life}/3 vs #{player2.name}: #{player2.life}/3"
+          puts "#{@player1.name}: #{@player1.life}/#{player1.initial_life} vs #{player2.name}: #{player2.life}/#{player2.initial_life}"
           else
           puts "#{@current_player.name}: YES! you are correct!"
-          puts "#{@player1.name}: #{@player1.life}/3 vs #{player2.name}: #{@player2.life}/3"
+          puts "#{@player1.name}: #{@player1.life}/#{player1.initial_life} vs #{player2.name}: #{@player2.life}/#{player2.initial_life}"
           end
         current_player = self.toggle_turn()
         @counter += 1
